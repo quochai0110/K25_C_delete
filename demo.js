@@ -23,6 +23,7 @@ function renderProducts() {
     for (let i = 0; i < products.length; i++) {
         str+= `<li>${products[i].name}   <button onclick="deleteProduct(${i})">xóa ${i+1}</button> </li>`
     }
+    // products.forEach(()=>str+=`<li>${products[i].name}`)
     document.getElementById("list").innerHTML= str;
 }
 renderProducts();
